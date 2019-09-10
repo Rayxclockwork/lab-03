@@ -46,4 +46,19 @@ case 'no':
   break;
 default:
   console,log(usersName + ' typed something different than Yes or No.');
+  alert('Please type Yes or No');
 }
+
+var eastCoast = prompt('Are you from the East coast?');
+switch(eastCoast.toLowerCase()){
+case 'yes':
+  console.log(usersName + ' is from the East coast.');
+  alert('I am from the East coast too!');   
+  break;
+case 'no':  
+  console.log(usersName + 'isn\'t from the East coast.');
+  alert('Cool that you\'re from somewhere else!');
+  break;
+default:
+  console.log(usersName + ' typed something different than Yes or No.');
+  alert('Please type Yes or No');
