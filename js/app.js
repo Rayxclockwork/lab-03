@@ -62,3 +62,18 @@ case 'no':
 default:
   console.log(usersName + ' typed something different than Yes or No.');
   alert('Please type Yes or No');
+}
+
+var likeRamen = prompt('Do you like ramen?');
+switch(likeRamen.toLowerCase()){
+case 'yes':
+  console.log(usersName + ' likes ramen.');
+  alert('Me too! I could eat it all day');
+  break;
+case 'no':
+  console.log(usersName + 'doesn\'t like ramen.');
+  alert('You\'re missing out!');
+  break;
+default:
+  console.log(usersName + ' typed something different than Yes or No.');
+}
