@@ -17,7 +17,6 @@ case 'no':
 default:
   console.log(usersName + ' typed something different than Yes or No.');
   alert('Please type Yes or No');
-  break;
 }
 
 var likeCats = prompt('Do you like cats? Yes/No');
@@ -33,4 +32,18 @@ case 'no':
 default:
   console.log(usersName + ' typed something different than Yes or No.');
   alert('Please type Yes or No');  
+}
+
+var likeTennis = prompt('Do you like playing tennis?');
+switch(likeTennis.toLowerCase()){
+case 'yes':
+  console.log(usersName + 'likes playing tennis.');
+  alert('Let\'s play together sometime!');
+  break;
+case 'no':
+  console.log(usersName + 'doesn\'t like playing tennis.');
+  alert('Aw, darn');
+  break;
+default:
+  console,log(usersName + ' typed something different than Yes or No.');
 }
