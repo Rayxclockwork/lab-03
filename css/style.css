@@ -16,13 +16,20 @@ h2 {
     border-width: 5px;
     border-radius: 20px;
     padding: 15px;
+    margin-left: 4em;
     text-align: center;
     width: 300px;
 }
 
+h3 {
+    margin-left: 6em;
+}
+
 p, ul, ol {
     color: #7302CA;
-    display: block;
+    margin-left: 6em;
+    margin-right: 6em;
+    max-width: 
 }
 
 footer {
