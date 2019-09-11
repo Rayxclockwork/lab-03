@@ -1,79 +1,84 @@
 'use strict';
 
 var usersName = prompt('What\'s your name?');
-console.log('User\'s name is ' + usersName +' and they\'re AWESOME!');
+console.log('User\'s name is ' + usersName + ' and they\'re AWESOME!');
 alert('HEY, ' + usersName + '! You\'re AWESOME!!!');
 
-var alien = prompt('Are you an alien? Yes/No');
-switch(alien.toLowerCase()){
+var eastCoast = prompt('Am I from Seattle? Yes/No');
+switch (eastCoast.toLowerCase()) {
 case 'yes':
-  console.log(usersName + ' is an alien.');
-  alert('Greetings, Alien');
+  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+  alert('No, I\'m actuallly from the East Cost!');
   break;
 case 'no':
-  console.log(usersName + ' is a human.');
-  alert('Greetings, Earthling');
+  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+  alert('Yep! I\'m actuallly from the East Cost!');
   break;
 default:
-  console.log(usersName + ' typed something different than Yes or No.');
+  console.log(usersName + ' typed something different than Yes or No for eastCoast question');
   alert('Please type Yes or No');
 }
 
-var likeCats = prompt('Do you like cats? Yes/No');
-switch(likeCats.toLowerCase()){
+var weather = prompt('Do I like warm weather? Yes/No');
+switch (weather.toLowerCase()) {
 case 'yes':
-  console.log(usersName + ' likes cats.');
-  alert('You like cats! Did we just become best friends?');
+  console.log(usersName + ' typed ' + weather + ' for weather question');
+  alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
   break;
 case 'no':
-  console.log(usersName + ' doesn\'t like cats.');
-  alert('You don\'t like cats and that makes me sad...');
+  console.log(usersName + ' typed ' + weather + ' for weather question');
+  alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
   break;
 default:
-  console.log(usersName + ' typed something different than Yes or No.');
-  alert('Please type Yes or No');  
-}
-
-var likeTennis = prompt('Do you like playing tennis?');
-switch(likeTennis.toLowerCase()){
-case 'yes':
-  console.log(usersName + 'likes playing tennis.');
-  alert('Let\'s play together sometime!');
-  break;
-case 'no':
-  console.log(usersName + 'doesn\'t like playing tennis.');
-  alert('Aw, darn');
-  break;
-default:
-  console,log(usersName + ' typed something different than Yes or No.');
+  console.log(usersName + ' typed something different than Yes or No for weather question');
   alert('Please type Yes or No');
 }
 
-var eastCoast = prompt('Are you from the East coast?');
-switch(eastCoast.toLowerCase()){
+var likeCats = prompt('Do I like dogs more than cats? Yes/No');
+switch (likeCats.toLowerCase()) {
 case 'yes':
-  console.log(usersName + ' is from the East coast.');
-  alert('I am from the East coast too!');   
+  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+  alert('No, I prefer cats. Meow.');
   break;
-case 'no':  
-  console.log(usersName + 'isn\'t from the East coast.');
-  alert('Cool that you\'re from somewhere else!');
+case 'no':
+  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+  alert('Correct! I LOVE cats. Meow.');
   break;
 default:
-  console.log(usersName + ' typed something different than Yes or No.');
+  console.log(usersName + ' typed something different than Yes or No for likeCats question');
   alert('Please type Yes or No');
 }
 
-var likeRamen = prompt('Do you like ramen?');
-switch(likeRamen.toLowerCase()){
+var likeTennis = prompt('Do I like playing tennis? Yes/No');
+switch (likeTennis.toLowerCase()) {
 case 'yes':
-  console.log(usersName + ' likes ramen.');
-  alert('Me too! I could eat it all day');
+  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+  alert(
+    'I do like playing. Let me know if you do too and want to play together sometime!'
+  );
   break;
 case 'no':
-  console.log(usersName + 'doesn\'t like ramen.');
-  alert('You\'re missing out!');
+  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+  alert(
+    'Nope. I like playing. Let me know if you do too and want to play together sometime!'
+  );
   break;
 default:
-  console.log(usersName + ' typed something different than Yes or No.');
+  console, log(usersName + ' typed something different than Yes or No for likeTennis question');
+  alert('Please type Yes or No');
+}
+
+var likeRamen = prompt('Do I like ramen? Yes/No');
+switch (likeRamen.toLowerCase()) {
+case 'yes':
+  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+  alert('Yes, I could eat it all day');
+  break;
+case 'no':
+  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+  alert('Good try. I love it!');
+  break;
+default:
+  console.log(usersName + ' typed something different than Yes or No for likeRamen question');
+  alert('Please type Yes or No');
 }
