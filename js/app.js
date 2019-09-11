@@ -10,7 +10,15 @@ case 'yes':
   console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
   alert('No, I\'m actuallly from the East Cost!');
   break;
+case 'y':
+  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+  alert('No, I\'m actuallly from the East Cost!');
+  break;
 case 'no':
+  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+  alert('Yep! I\'m actuallly from the East Cost!');
+  break;
+case 'n':
   console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
   alert('Yep! I\'m actuallly from the East Cost!');
   break;
@@ -25,7 +33,15 @@ case 'yes':
   console.log(usersName + ' typed ' + weather + ' for weather question');
   alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
   break;
+case 'y':
+  console.log(usersName + ' typed ' + weather + ' for weather question');
+  alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+  break;
 case 'no':
+  console.log(usersName + ' typed ' + weather + ' for weather question');
+  alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+  break;
+case 'n':
   console.log(usersName + ' typed ' + weather + ' for weather question');
   alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
   break;
@@ -40,7 +56,15 @@ case 'yes':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
   alert('No, I prefer cats. Meow.');
   break;
+case 'y':
+  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+  alert('No, I prefer cats. Meow.');
+  break;
 case 'no':
+  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+  alert('Correct! I LOVE cats. Meow.');
+  break;
+case 'n':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
   alert('Correct! I LOVE cats. Meow.');
   break;
@@ -53,18 +77,22 @@ var likeTennis = prompt('Do I like playing tennis? Yes/No');
 switch (likeTennis.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert(
-    'I do like playing. Let me know if you do too and want to play together sometime!'
-  );
+  alert('I do like playing. Let me know if you do too and want to play together sometime!'); 
   break;
+case 'y':
+  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+  alert('I do like playing. Let me know if you do too and want to play together sometime!'); 
+  break;  
 case 'no':
   console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert(
-    'Nope. I like playing. Let me know if you do too and want to play together sometime!'
-  );
+  alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
   break;
+case 'n':
+  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+  alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
+  break;  
 default:
-  console, log(usersName + ' typed something different than Yes or No for likeTennis question');
+  console.log(usersName + ' typed something different than Yes or No for likeTennis question');
   alert('Please type Yes or No');
 }
 
@@ -74,10 +102,18 @@ case 'yes':
   console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
   alert('Yes, I could eat it all day');
   break;
+case 'y':
+  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+  alert('Yes, I could eat it all day');
+  break;  
 case 'no':
   console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
   alert('Good try. I love it!');
   break;
+case 'n':
+  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+  alert('Good try. I love it!');
+  break;  
 default:
   console.log(usersName + ' typed something different than Yes or No for likeRamen question');
   alert('Please type Yes or No');
