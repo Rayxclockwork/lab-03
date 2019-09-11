@@ -1,3 +1,30 @@
 body {
-    background-color: #e6e6ff;
+    background-color: #D9F8FC;
+    font-size: 1.2em;
+}
+
+h1 {
+    background-color: #7302CA;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+h2 { 
+    border-color: #7302CA;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+p, ul, ol {
+    color: #7302CA;
+    display: block;
+}
+
+footer {
+    text-align: center;
 }
