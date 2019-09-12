@@ -23,6 +23,7 @@ Project for Code 201 to let others learn about me while allowing me to practice 
 ### Author: 
 Shelby Byrd
 
+
 ### Links and Resources
 Setting Up a New Project
 https://codefellows.github.io/code-201-guide/curriculum/class-02/lab/setting-up-a-new-project.html
@@ -47,3 +48,7 @@ When I think I have it, I feel like I struggle applying what I've learned. I get
 
 How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
 It took me 9 hrs. I thought it'd take me 6 hrs at most.
+
+Day 3 (9/12/19):
+
+Raven Delaney was the driver for today's pair programming.
