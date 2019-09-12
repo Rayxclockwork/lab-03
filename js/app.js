@@ -38,32 +38,36 @@ askEast();
 
 // Question 2
 var weather = prompt('Do I like warm weather? Yes/No');
-switch (weather.toLowerCase()) {
-case 'yes':
-  console.log(usersName + ' typed ' + weather + ' for weather question');
-  alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-  countTotalCorrect++;
-  break;
-case 'y':
-  console.log(usersName + ' typed ' + weather + ' for weather question');
-  alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-  countTotalCorrect++;
-  break;
-case 'no':
-  console.log(usersName + ' typed ' + weather + ' for weather question');
-  alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-  break;
-case 'n':
-  console.log(usersName + ' typed ' + weather + ' for weather question');
-  alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-  break;
-default:
-  console.log(usersName + ' typed something different than Yes or No for weather question');
-  alert('Please type Yes or No');
+function askWeather () {
+  switch (weather.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for weather question');
+    alert('Please type Yes or No');
+  }
 }
+askWeather();
 
 // Question 3
 var likeCats = prompt('Do I like dogs more than cats? Yes/No');
+
 switch (likeCats.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
