@@ -9,29 +9,32 @@ alert('HEY, ' + usersName + '! You\'re AWESOME!!!');
 
 // Question 1
 var eastCoast = prompt('Am I from Seattle? Yes/No');
-switch (eastCoast.toLowerCase()) {
-case 'yes':
-  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-  alert('No, I\'m actuallly from the East Cost!');
-  countTotalCorrect++;
-  break;
-case 'y':
-  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-  alert('No, I\'m actuallly from the East Cost!');
-  countTotalCorrect++;
-  break;
-case 'no':
-  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-  alert('Yep! I\'m actuallly from the East Cost!');
-  break;
-case 'n':
-  console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-  alert('Yep! I\'m actuallly from the East Cost!');
-  break;
-default:
-  console.log(usersName + ' typed something different than Yes or No for eastCoast question');
-  alert('Please type Yes or No');
+function askEast () {
+  switch (eastCoast.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('No, I\'m actuallly from the East Cost!');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('No, I\'m actuallly from the East Cost!');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('Yep! I\'m actuallly from the East Cost!');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('Yep! I\'m actuallly from the East Cost!');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for eastCoast question');
+    alert('Please type Yes or No');
+  }
 }
+askEast();
 
 // Question 2
 var weather = prompt('Do I like warm weather? Yes/No');
