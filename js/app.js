@@ -125,29 +125,32 @@ askTennis();
 
 // Question 5
 var likeRamen = prompt('Do I like ramen? Yes/No');
-switch (likeRamen.toLowerCase()) {
-case 'yes':
-  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
-  alert('Yes, I could eat it all day');
-  countTotalCorrect++;
-  break;
-case 'y':
-  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
-  alert('Yes, I could eat it all day');
-  countTotalCorrect++;
-  break;
-case 'no':
-  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
-  alert('Good try. I love it!');
-  break;
-case 'n':
-  console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
-  alert('Good try. I love it!');
-  break;
-default:
-  console.log(usersName + ' typed something different than Yes or No for likeRamen question');
-  alert('Please type Yes or No');
+function askRamen () {
+  switch (likeRamen.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+    alert('Yes, I could eat it all day');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+    alert('Yes, I could eat it all day');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+    alert('Good try. I love it!');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
+    alert('Good try. I love it!');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for likeRamen question');
+    alert('Please type Yes or No');
+  }
 }
+askRamen();
 
 // Question 6
 // 4 attempts to guess
