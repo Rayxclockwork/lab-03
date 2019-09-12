@@ -7,92 +7,92 @@ var usersName = prompt('What\'s your name?');
 console.log('User\'s name is ' + usersName + ' and they\'re AWESOME!');
 alert('HEY, ' + usersName + '! You\'re AWESOME!!!');
 
-// // Question 1
-// var eastCoast = prompt('Am I from Seattle? Yes/No');
-// function askEast () {
-//   switch (eastCoast.toLowerCase()) {
-//   case 'yes':
-//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-//     alert('No, I\'m actuallly from the East Cost!');
-//     countTotalCorrect++;
-//     break;
-//   case 'y':
-//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-//     alert('No, I\'m actuallly from the East Cost!');
-//     countTotalCorrect++;
-//     break;
-//   case 'no':
-//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-//     alert('Yep! I\'m actuallly from the East Cost!');
-//     break;
-//   case 'n':
-//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-//     alert('Yep! I\'m actuallly from the East Cost!');
-//     break;
-//   default:
-//     console.log(usersName + ' typed something different than Yes or No for eastCoast question');
-//     alert('Please type Yes or No');
-//   }
-// }
-// askEast();
+// Question 1
+var eastCoast = prompt('Am I from Seattle? Yes/No');
+function askEast () {
+  switch (eastCoast.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('No, I\'m actuallly from the East Cost!');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('No, I\'m actuallly from the East Cost!');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('Yep! I\'m actuallly from the East Cost!');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+    alert('Yep! I\'m actuallly from the East Cost!');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for eastCoast question');
+    alert('Please type Yes or No');
+  }
+}
+askEast();
 
-// // Question 2
-// var weather = prompt('Do I like warm weather? Yes/No');
-// function askWeather () {
-//   switch (weather.toLowerCase()) {
-//   case 'yes':
-//     console.log(usersName + ' typed ' + weather + ' for weather question');
-//     alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-//     countTotalCorrect++;
-//     break;
-//   case 'y':
-//     console.log(usersName + ' typed ' + weather + ' for weather question');
-//     alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-//     countTotalCorrect++;
-//     break;
-//   case 'no':
-//     console.log(usersName + ' typed ' + weather + ' for weather question');
-//     alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-//     break;
-//   case 'n':
-//     console.log(usersName + ' typed ' + weather + ' for weather question');
-//     alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-//     break;
-//   default:
-//     console.log(usersName + ' typed something different than Yes or No for weather question');
-//     alert('Please type Yes or No');
-//   }
-// }
-// askWeather();
+// Question 2
+var weather = prompt('Do I like warm weather? Yes/No');
+function askWeather () {
+  switch (weather.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + weather + ' for weather question');
+    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for weather question');
+    alert('Please type Yes or No');
+  }
+}
+askWeather();
 
-// // Question 3
-// var likeCats = prompt('Do I like dogs more than cats? Yes/No');
-// function askCats() {
-//   switch (likeCats.toLowerCase()) {
-//   case 'yes':
-//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-//     alert('No, I prefer cats. Meow.');
-//     countTotalCorrect++;
-//     break;
-//   case 'y':
-//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-//     alert('No, I prefer cats. Meow.');
-//     countTotalCorrect++;
-//     break;
-//   case 'no':
-//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-//     alert('Correct! I LOVE cats. Meow.');
-//     break;
-//   case 'n':
-//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-//     alert('Correct! I LOVE cats. Meow.');
-//     break;
-//   default:
-//     console.log(usersName + ' typed something different than Yes or No for likeCats question');
-//     alert('Please type Yes or No');
-//   }
-// }
-// askCats();
+// Question 3
+var likeCats = prompt('Do I like dogs more than cats? Yes/No');
+function askCats() {
+  switch (likeCats.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('No, I prefer cats. Meow.');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('No, I prefer cats. Meow.');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('Correct! I LOVE cats. Meow.');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('Correct! I LOVE cats. Meow.');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for likeCats question');
+    alert('Please type Yes or No');
+  }
+}
+askCats();
 
 // Question 4
 var likeTennis = prompt('Do I like playing tennis? Yes/No');
@@ -210,28 +210,31 @@ var likeSingers = [
 //index 0-6
 var maxGuessAttemptSingers = 6;
 var userInputSingers = prompt('Which singers do I like?');
-for (var i = 0; i < maxGuessAttemptSingers; i++) {
-  for (var j = 0; j < likeSingers.length; j++) {
-    if (likeSingers[j].toLowerCase() === userInputSingers.toLowerCase()) {
-      console.log(usersName + ' typed one of the singers I like');
-      alert('Yipee! You\'re correct. My favorites are : ' + likeSingers.toString());
-      correct = true;
-      totalGuessAttemptsSingers++;
-      countTotalCorrect++;
+function askSingers () {
+  for (var i = 0; i < maxGuessAttemptSingers; i++) {
+    for (var j = 0; j < likeSingers.length; j++) {
+      if (likeSingers[j].toLowerCase() === userInputSingers.toLowerCase()) {
+        console.log(usersName + ' typed one of the singers I like');
+        alert('Yipee! You\'re correct. My favorites are : ' + likeSingers.toString());
+        correct = true;
+        totalGuessAttemptsSingers++;
+        countTotalCorrect++;
+        break;
+      }
+    }
+    if (correct){
       break;
     }
-  }
-  if (correct){
-    break;
-  }
-  if(maxGuessAttemptSingers === i + 1) {
-    console.log(usersName +' ran out of attempts for singers question');
-    alert('Sorry, you ran out of attempts. My favorites are : ' + likeSingers.toString());
-    correct = true;
-  }
-  else {userInputSingers = prompt('It\'s not correct. Try again!');
+    if(maxGuessAttemptSingers === i + 1) {
+      console.log(usersName +' ran out of attempts for singers question');
+      alert('Sorry, you ran out of attempts. My favorites are : ' + likeSingers.toString());
+      correct = true;
+    }
+    else {userInputSingers = prompt('It\'s not correct. Try again!');
+    }
   }
 }
+askSingers();
 
 console.log(usersName + 'got ' + countTotalCorrect + ' correct');
 alert('You got ' + countTotalCorrect + ' correct!!');
