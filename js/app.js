@@ -164,7 +164,7 @@ for(var i = 1; i <= maxGuessAttemptCousins; i++) {
     countTotalCorrect++;;
     break;
   }else{
-    console.log(usersName + ' typed in something different than a number');
+    console.log(usersName + ' typed in something different than a number for cousins questions');
     userInputCousins = parseInt(prompt('Please type in a number.'));
   }
 }
@@ -202,7 +202,7 @@ for (var i = 0; i < maxGuessAttemptSingers; i++) {
     break;
   }
   if(maxGuessAttemptSingers === i + 1) {
-    console.log(usersName +' ran out of attempts for cousin question');
+    console.log(usersName +' ran out of attempts for singers question');
     alert('Sorry, you ran out of attempts. My favorites are : ' + likeSingers.toString());
     break;
   }
