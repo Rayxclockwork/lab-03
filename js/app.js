@@ -144,35 +144,37 @@ var correctNumberCousins = 14;
 var totalGuessAttemptsCousins = 0;
 var maxGuessAttemptCousins = 4;
 
-for (var i = 1; i <= maxGuessAttemptCousins && !correct; i++) {
-  if (i === 4 && userInputCousins !== correctNumberCousins) {
-    console.log(usersName +' ran out of attempts for cousin question');
-    alert('Sorry, you ran out of attempts. The correct answer is 14!');
+function askCousins () {
+  for (var i = 1; i <= maxGuessAttemptCousins && !correct; i++) {
+    if (i === 4 && userInputCousins !== correctNumberCousins) {
+      console.log(usersName +' ran out of attempts for cousin question');
+      alert('Sorry, you ran out of attempts. The correct answer is 14!');
+    }
+    else if (userInputCousins > correctNumberCousins) {
+      console.log(usersName + ' guessed too high for number of cousins');
+      userInputCousins = parseInt(prompt('WOAH. Too many cousins. Take another guess'));
+      totalGuessAttemptsCousins++;
+    }
+    else if (userInputCousins < correctNumberCousins) {
+      console.log(usersName + ' guessed too low for number of cousins');
+      totalGuessAttemptsCousins++;
+      userInputCousins = parseInt(prompt('Aw, too low. Take another guess'));
+    }
+    else if (userInputCousins === correctNumberCousins) {
+      console.log(usersName + ' guessed the correct number of cousins!');
+      alert('Yes! I have 14 cousins.');
+      totalGuessAttemptsCousins++;
+      countTotalCorrect++;
+      correct = true;
+    }
+    else {
+      console.log(usersName + ' typed in something different than a number for cousins questions');
+      userInputCousins = parseInt(prompt('Please type in a number.'));
+    }
   }
-  else if (userInputCousins > correctNumberCousins) {
-    console.log(usersName + ' guessed too high for number of cousins');
-    userInputCousins = parseInt(prompt('WOAH. Too many cousins. Take another guess'));
-    totalGuessAttemptsCousins++;
-  }
-  else if (userInputCousins < correctNumberCousins) {
-    console.log(usersName + ' guessed too low for number of cousins');
-    totalGuessAttemptsCousins++;
-    userInputCousins = parseInt(prompt('Aw, too low. Take another guess'));
-  }
-  else if (userInputCousins === correctNumberCousins) {
-    console.log(usersName + ' guessed the correct number of cousins!');
-    alert('Yes! I have 14 cousins.');
-    totalGuessAttemptsCousins++;
-    countTotalCorrect++;
-    correct = true;
-  }
-  else {
-    console.log(usersName + ' typed in something different than a number for cousins questions');
-    userInputCousins = parseInt(prompt('Please type in a number.'));
-  }
+  console.log(usersName + ' completed Question 6');
 }
-
-console.log(usersName + ' completed Question 6');
+askCousins();
 
 // Rechecking Question 7
 // TODO Change the break in statement
