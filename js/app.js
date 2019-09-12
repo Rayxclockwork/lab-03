@@ -7,118 +7,121 @@ var usersName = prompt('What\'s your name?');
 console.log('User\'s name is ' + usersName + ' and they\'re AWESOME!');
 alert('HEY, ' + usersName + '! You\'re AWESOME!!!');
 
-// Question 1
-var eastCoast = prompt('Am I from Seattle? Yes/No');
-function askEast () {
-  switch (eastCoast.toLowerCase()) {
-  case 'yes':
-    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-    alert('No, I\'m actuallly from the East Cost!');
-    countTotalCorrect++;
-    break;
-  case 'y':
-    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-    alert('No, I\'m actuallly from the East Cost!');
-    countTotalCorrect++;
-    break;
-  case 'no':
-    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-    alert('Yep! I\'m actuallly from the East Cost!');
-    break;
-  case 'n':
-    console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
-    alert('Yep! I\'m actuallly from the East Cost!');
-    break;
-  default:
-    console.log(usersName + ' typed something different than Yes or No for eastCoast question');
-    alert('Please type Yes or No');
-  }
-}
-askEast();
+// // Question 1
+// var eastCoast = prompt('Am I from Seattle? Yes/No');
+// function askEast () {
+//   switch (eastCoast.toLowerCase()) {
+//   case 'yes':
+//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+//     alert('No, I\'m actuallly from the East Cost!');
+//     countTotalCorrect++;
+//     break;
+//   case 'y':
+//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+//     alert('No, I\'m actuallly from the East Cost!');
+//     countTotalCorrect++;
+//     break;
+//   case 'no':
+//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+//     alert('Yep! I\'m actuallly from the East Cost!');
+//     break;
+//   case 'n':
+//     console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
+//     alert('Yep! I\'m actuallly from the East Cost!');
+//     break;
+//   default:
+//     console.log(usersName + ' typed something different than Yes or No for eastCoast question');
+//     alert('Please type Yes or No');
+//   }
+// }
+// askEast();
 
-// Question 2
-var weather = prompt('Do I like warm weather? Yes/No');
-function askWeather () {
-  switch (weather.toLowerCase()) {
-  case 'yes':
-    console.log(usersName + ' typed ' + weather + ' for weather question');
-    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-    countTotalCorrect++;
-    break;
-  case 'y':
-    console.log(usersName + ' typed ' + weather + ' for weather question');
-    alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-    countTotalCorrect++;
-    break;
-  case 'no':
-    console.log(usersName + ' typed ' + weather + ' for weather question');
-    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-    break;
-  case 'n':
-    console.log(usersName + ' typed ' + weather + ' for weather question');
-    alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
-    break;
-  default:
-    console.log(usersName + ' typed something different than Yes or No for weather question');
-    alert('Please type Yes or No');
-  }
-}
-askWeather();
+// // Question 2
+// var weather = prompt('Do I like warm weather? Yes/No');
+// function askWeather () {
+//   switch (weather.toLowerCase()) {
+//   case 'yes':
+//     console.log(usersName + ' typed ' + weather + ' for weather question');
+//     alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+//     countTotalCorrect++;
+//     break;
+//   case 'y':
+//     console.log(usersName + ' typed ' + weather + ' for weather question');
+//     alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
+//     countTotalCorrect++;
+//     break;
+//   case 'no':
+//     console.log(usersName + ' typed ' + weather + ' for weather question');
+//     alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+//     break;
+//   case 'n':
+//     console.log(usersName + ' typed ' + weather + ' for weather question');
+//     alert('Wrong. I love the sun! Funny that I\'m in Seattle...');
+//     break;
+//   default:
+//     console.log(usersName + ' typed something different than Yes or No for weather question');
+//     alert('Please type Yes or No');
+//   }
+// }
+// askWeather();
 
-// Question 3
-var likeCats = prompt('Do I like dogs more than cats? Yes/No');
-function askCats() {
-  switch (likeCats.toLowerCase()) {
-  case 'yes':
-    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-    alert('No, I prefer cats. Meow.');
-    countTotalCorrect++;
-    break;
-  case 'y':
-    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-    alert('No, I prefer cats. Meow.');
-    countTotalCorrect++;
-    break;
-  case 'no':
-    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-    alert('Correct! I LOVE cats. Meow.');
-    break;
-  case 'n':
-    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-    alert('Correct! I LOVE cats. Meow.');
-    break;
-  default:
-    console.log(usersName + ' typed something different than Yes or No for likeCats question');
-    alert('Please type Yes or No');
-  }
-}
-askCats();
+// // Question 3
+// var likeCats = prompt('Do I like dogs more than cats? Yes/No');
+// function askCats() {
+//   switch (likeCats.toLowerCase()) {
+//   case 'yes':
+//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+//     alert('No, I prefer cats. Meow.');
+//     countTotalCorrect++;
+//     break;
+//   case 'y':
+//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+//     alert('No, I prefer cats. Meow.');
+//     countTotalCorrect++;
+//     break;
+//   case 'no':
+//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+//     alert('Correct! I LOVE cats. Meow.');
+//     break;
+//   case 'n':
+//     console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+//     alert('Correct! I LOVE cats. Meow.');
+//     break;
+//   default:
+//     console.log(usersName + ' typed something different than Yes or No for likeCats question');
+//     alert('Please type Yes or No');
+//   }
+// }
+// askCats();
 
 // Question 4
 var likeTennis = prompt('Do I like playing tennis? Yes/No');
-switch (likeTennis.toLowerCase()) {
-case 'yes':
-  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert('I do like playing. Let me know if you do too and want to play together sometime!');
-  countTotalCorrect++;
-  break;
-case 'y':
-  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert('I do like playing. Let me know if you do too and want to play together sometime!');
-  countTotalCorrect++;
-  break;
-case 'no':
-  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
-  break;
-case 'n':
-  console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
-  alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
-  break;
-default:
-  console.log(usersName + ' typed something different than Yes or No for likeTennis question');
-  alert('Please type Yes or No');
+function askTennis () {
+  switch (likeTennis.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+    alert('I do like playing. Let me know if you do too and want to play together sometime!');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+    alert('I do like playing. Let me know if you do too and want to play together sometime!');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+    alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
+    alert('Nope. I like playing. Let me know if you do too and want to play together sometime!');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for likeTennis question');
+    alert('Please type Yes or No');
+  }
 }
+askTennis();
 
 // Question 5
 var likeRamen = prompt('Do I like ramen? Yes/No');
