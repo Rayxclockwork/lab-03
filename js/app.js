@@ -1,21 +1,24 @@
 'use strict';
 
-var countRight = 0;
+
+var countTotalCorrect = 0;
+// Prompts user their name
 var usersName = prompt('What\'s your name?');
 console.log('User\'s name is ' + usersName + ' and they\'re AWESOME!');
 alert('HEY, ' + usersName + '! You\'re AWESOME!!!');
 
+// Question 1
 var eastCoast = prompt('Am I from Seattle? Yes/No');
 switch (eastCoast.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
   alert('No, I\'m actuallly from the East Cost!');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'y':
   console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
   alert('No, I\'m actuallly from the East Cost!');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'no':
   console.log(usersName + ' typed ' + eastCoast + ' for eastCoast question');
@@ -30,17 +33,18 @@ default:
   alert('Please type Yes or No');
 }
 
+// Question 2
 var weather = prompt('Do I like warm weather? Yes/No');
 switch (weather.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + weather + ' for weather question');
   alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'y':
   console.log(usersName + ' typed ' + weather + ' for weather question');
   alert('Yes, I love the warmth! Funny that I\'m in Seattle...');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'no':
   console.log(usersName + ' typed ' + weather + ' for weather question');
@@ -55,17 +59,18 @@ default:
   alert('Please type Yes or No');
 }
 
+// Question 3
 var likeCats = prompt('Do I like dogs more than cats? Yes/No');
 switch (likeCats.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
   alert('No, I prefer cats. Meow.');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'y':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
   alert('No, I prefer cats. Meow.');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'no':
   console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
@@ -80,17 +85,18 @@ default:
   alert('Please type Yes or No');
 }
 
+// Question 4
 var likeTennis = prompt('Do I like playing tennis? Yes/No');
 switch (likeTennis.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
   alert('I do like playing. Let me know if you do too and want to play together sometime!');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'y':
   console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
   alert('I do like playing. Let me know if you do too and want to play together sometime!');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'no':
   console.log(usersName + ' typed ' + likeTennis + ' for likeTennis question');
@@ -105,17 +111,18 @@ default:
   alert('Please type Yes or No');
 }
 
+// Question 5
 var likeRamen = prompt('Do I like ramen? Yes/No');
 switch (likeRamen.toLowerCase()) {
 case 'yes':
   console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
   alert('Yes, I could eat it all day');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'y':
   console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
   alert('Yes, I could eat it all day');
-  countRight++;
+  countTotalCorrect++;
   break;
 case 'no':
   console.log(usersName + ' typed ' + likeRamen + ' for likeRamen question');
@@ -130,6 +137,8 @@ default:
   alert('Please type Yes or No');
 }
 
+// Question 6
+// 4 attempts to guess
 var userInputCousins = parseInt(prompt('How many cousins on my mother\'s side do I have?'));
 var correctNumberCousins = 14;
 var totalGuessAttemptsCousins = 0;
@@ -152,7 +161,7 @@ for(var i = 1; i <= maxGuessAttemptCousins; i++) {
     console.log(usersName + ' guessed the correct number of cousins!');
     alert('Yes! I have 14 cousins.');
     totalGuessAttemptsCousins++;
-    countRight++;;
+    countTotalCorrect++;;
     break;
   }else{
     console.log(usersName + ' typed in something different than a number');
@@ -160,6 +169,8 @@ for(var i = 1; i <= maxGuessAttemptCousins; i++) {
   }
 }
 
+// Question 7
+// 6 attempts to guess
 console.log('here');
 var totalGuessAttemptsSingers = 0;
 var likeSingers = [
@@ -183,20 +194,20 @@ for (var i = 0; i < maxGuessAttemptSingers; i++) {
       alert('Yipee! You\'re correct. My favorites are : ' + likeSingers.toString());
       correct = true;
       totalGuessAttemptsSingers++;
-      countRight++;
+      countTotalCorrect++;
       break;
     }
   }
   if (correct){
     break;
   }
-  totalGuessAttemptsSingers++;
   if(maxGuessAttemptSingers === i + 1) {
     console.log(usersName +' ran out of attempts for cousin question');
     alert('Sorry, you ran out of attempts. My favorites are : ' + likeSingers.toString());
+    break;
   }
   alert('It\'s not correct. Try again!');
 }
 
-console.log(usersName + 'got ' + countRight + ' correct');
-alert('You got ' + countRight + ' correct!!');
+console.log(usersName + 'got ' + countTotalCorrect + ' correct');
+alert('You got ' + countTotalCorrect + ' correct!!');
