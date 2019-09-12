@@ -67,30 +67,32 @@ askWeather();
 
 // Question 3
 var likeCats = prompt('Do I like dogs more than cats? Yes/No');
-
-switch (likeCats.toLowerCase()) {
-case 'yes':
-  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-  alert('No, I prefer cats. Meow.');
-  countTotalCorrect++;
-  break;
-case 'y':
-  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-  alert('No, I prefer cats. Meow.');
-  countTotalCorrect++;
-  break;
-case 'no':
-  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-  alert('Correct! I LOVE cats. Meow.');
-  break;
-case 'n':
-  console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
-  alert('Correct! I LOVE cats. Meow.');
-  break;
-default:
-  console.log(usersName + ' typed something different than Yes or No for likeCats question');
-  alert('Please type Yes or No');
+function askCats() {
+  switch (likeCats.toLowerCase()) {
+  case 'yes':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('No, I prefer cats. Meow.');
+    countTotalCorrect++;
+    break;
+  case 'y':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('No, I prefer cats. Meow.');
+    countTotalCorrect++;
+    break;
+  case 'no':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('Correct! I LOVE cats. Meow.');
+    break;
+  case 'n':
+    console.log(usersName + ' typed ' + likeCats + ' for likeCats question');
+    alert('Correct! I LOVE cats. Meow.');
+    break;
+  default:
+    console.log(usersName + ' typed something different than Yes or No for likeCats question');
+    alert('Please type Yes or No');
+  }
 }
+askCats();
 
 // Question 4
 var likeTennis = prompt('Do I like playing tennis? Yes/No');
